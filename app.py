@@ -1,6 +1,6 @@
 import pandas as pd 
 import streamlit as st 
-url = "https://script.google.com/macros/s/AKfycbw_GJ4BnBGCzXK8_kNsUVKH43tsZ22RIR2xxjeDEU6Z7sHK4jifvq0D4woI8Oazx0KE/exec" 
+url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQo6u0LSpFpxtuIir6mFekHUv2fbOLPfrUkc5636_thMoKvsKzN-R1g4vtjmYgdwroPS2aMLASwIbiS/pubhtml?gid=0&single=true" 
 df = pd.read_csv(url) 
 st.title("Monitoramento IoT") 
 st.line_chart(df[['temperatura', 'umidade']]) 
